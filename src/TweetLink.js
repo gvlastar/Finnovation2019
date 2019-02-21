@@ -8,7 +8,6 @@ class TweetLink extends React.Component {
         <TweetEmbed id={ this.props.id } options={{ width: '100%' }} />
         <Link to={ '/tweet/' + this.props.id }>
           <div 
-            className="tweetOverlay"
             style={{ 
               position: 'absolute', 
               top: 10, 
@@ -18,6 +17,7 @@ class TweetLink extends React.Component {
               opacity: 0.1,
               borderRadius: 5,
             }}
+            className="tweetOverlay"
           />
         </Link>
       </div>
