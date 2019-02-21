@@ -5,10 +5,10 @@ class TweetLink extends React.Component {
     render() {
       return <div style={{ position: 'relative', margin: 30}}>
         <TweetEmbed id={ this.props.id } options={{ width: '100%' }} />
-        <div 
-          style={{ 
-            position: 'absolute', 
-            top: 10, 
+        <div
+          style={{
+            position: 'absolute',
+            top: 10,
             width: '100%',
             height: 'calc(100% - 20px)',
             backgroundColor: 'black',
@@ -21,4 +21,4 @@ class TweetLink extends React.Component {
     }
 }
 
-export default TweetLink 
+export default TweetLink
