@@ -1,6 +1,7 @@
 import React from 'react';
 import image from './trump.jpg'
 import { Link } from 'react-router-dom'
+import './App.css';
 
 class FrontPage extends React.Component {
     render() {
@@ -17,22 +18,12 @@ class FrontPage extends React.Component {
             flexDirection: 'column',
             paddingTop: 40
         }}>
-        <div style={{ 
-            color: 'white',
-            fontSize: 72,
-            fontWeight: 900,
-            marginBottom: 100,
-            padding: 18,
+        <div id="trump" style={{
         }}>
-                TRUMPENOMICS
+                TRUMPONOMICS
             </div>
             <Link to="/tweets">
-                <div style={{ 
-                    color: 'white',
-                    padding: 24,
-                    fontWeight: 900,
-                    fontSize: 48,
-                    textDecoration: 'none',
+                <div id="start" style={{
                 }}>
                 START
             </div>

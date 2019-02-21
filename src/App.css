@@ -1,4 +1,9 @@
+.root {
+  background-color: #3742fa;
+}
+
 .App {
+  background-color: white;
   text-align: center;
 }
 
@@ -32,6 +37,18 @@
   }
 }
 
+.twitter-tweet {
+  box-shadow: 1px 1px 20px 1px #CCCCCC;
+  border-radius: 5px;
+}
+
+.tweetLink {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
 .tweetOverlay {
   background-color: black;
   opacity: 0;
@@ -40,4 +57,20 @@
 
 .tweetOverlay:hover {
   opacity: 0.1;
+}
+
+
+#trump {
+  color: white;
+  font-size: 6em;
+  font-weight: 900;
+  
+}
+
+#start {
+  color: white;
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: 50px;
+  text-decoration: none;
 }
