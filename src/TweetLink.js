@@ -7,14 +7,12 @@ class TweetLink extends React.Component {
       return <div className="tweetLink" style={{ position: 'relative' }}>
         <TweetEmbed id={ this.props.id } options={{ width: '100%' }} />
         <Link to={ '/tweet/' + this.props.id }>
-          <div 
-            style={{ 
-              position: 'absolute', 
-              top: 10, 
+          <div
+            style={{
+              position: 'absolute',
+              top: 10,
               width: '100%',
               height: 'calc(100% - 20px)',
-              backgroundColor: 'black',
-              opacity: 0.1,
               borderRadius: 5,
             }}
             className="tweetOverlay"
