@@ -8,14 +8,22 @@ class Question extends React.Component {
         answer: null,
       }
         this.questions = this.props.questions || [
-            '< 19,050',
-            '19,050 - 77,400',
-            '77,400 - 165,000',
+            '< $19,050',
+            '$19,050 - $77,400',
+            '$77,400 - $165,000',
+            '$165,000 - $315,000',
+            '$315,000 - $400,000',
+            '$400,000 - $600,000',
+            '> $600,000'
         ]
         this.answers = this.props.answers || [
-            'Answer to A',
-            'Answer to B',
-            'Answer to C',
+            '10%',
+            '12%',
+            '22%',
+            '24%',
+            '32%',
+            '35%',
+            '37%',
         ]
     }
 
@@ -29,8 +37,11 @@ class Question extends React.Component {
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        backgroundColor: 'red',
-                        marginTop: 24
+                        backgroundColor: 'black',
+                        color: 'white',
+                        marginTop: 24,
+                        fontSize: 12,
+                        textAlign: 'center',
                     }}
                     onClick={ () => this.setState({ answered: true, answer: i })}
                 >
@@ -42,12 +53,12 @@ class Question extends React.Component {
 
     renderAnswer() {
         return <div style={{ marginTop: 24 }}>
-            { this.answers[this.state.answer] }
+            Your family pays { this.answers[this.state.answer] } in taxes
         </div>
     }
 
     render() {
-        return <div style={{ backgroundColor: 'yellow', width: '100%', padding: 24 }}>
+        return <div style={{ width: '100%', padding: 24 }}>
             <h2 style={{ margin: 0 }}>What is your family’s annual income?</h2>
             { this.state.answered ? this.renderAnswer() : this.renderQuestions() }
         </div>

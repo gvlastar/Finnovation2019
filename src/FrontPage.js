@@ -18,10 +18,12 @@ class FrontPage extends React.Component {
             flexDirection: 'column',
             paddingTop: 40
         }}>
-        <div id="trump" style={{
-        }}>
-                TRUMPONOMICS
-            </div>
+	    <Link to="/tweets" style={{ textDecoration: 'none' }}>
+		<div id="trump" style={{
+		}}>
+			TRUMPONOMICS
+		    </div>
+	    </Link>
         </div>
     }
 }
