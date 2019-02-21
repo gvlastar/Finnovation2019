@@ -12,8 +12,13 @@ class App extends Component {
         justifyContent: 'center',
         width: '100%',
       }}>
-        <TweetLink id="1070110615627333632"/>
-        <TweetLink id="944308491887316992"/>
+        <div id="tweet_title"> TRUMPONOMICS </div>
+        <TweetLink id="1099082125523992576"/>
+        <TweetLink id="1098976205238398976"/>
+        <TweetLink id="1098976205238398976"/>
+        <TweetLink id="1098976205238398976"/>
+        <TweetLink id="1098976205238398976"/>
+        <TweetLink id="1098976205238398976"/>
       </div>
     );
   }
