@@ -32,7 +32,7 @@ At the same times, tariffs hurt international trade. For example, if the US impo
     renderTaxes() {
         return <div>
             <h1>Taxes</h1>
-            <Question 
+            <Question
             />
             <div style={{ marginTop: 16 }}>
 Income levels rise with inflation, so more people will be subject to the highest income bracket than they were under the pre-Trump tax law.
@@ -50,8 +50,8 @@ The deduction for married and joint filers increases from $12,700 to $24,000, bu
             alignItems: 'center',
         }}>
         <TweetEmbed id={ this.props.match.params.id } />
-        <div style={{ margin: 24, maxWidth: 700, width: '100%', display: 'flex', flexDirection: 'column' }}>
-            { id === "944308491887316992" ? 
+        <div style={{ margin: 24, maxWidth: 700, width: '100%', display: 'flex', flexDirection: 'column'}}>
+            { id === "944308491887316992" ?
                 this.renderTaxes() :
                 this.renderTariffs()
             }
@@ -60,4 +60,4 @@ The deduction for married and joint filers increases from $12,700 to $24,000, bu
     }
 }
 
-export default DetailPage  
+export default DetailPage
