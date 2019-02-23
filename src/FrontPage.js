@@ -22,7 +22,7 @@ class FrontPage extends React.Component {
         }}>
                 TRUMPONOMICS
             </div>
-            <Link to="/tweets">
+            <Link to="/tweets" style={{ textDecoration: 'none' }}>
                 <div id="start" style={{
                 }}>
                 START
