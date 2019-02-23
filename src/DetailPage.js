@@ -34,13 +34,12 @@ At the same times, tariffs hurt international trade. For example, if the US impo
             <h1>Taxes</h1>
             <Question 
             />
-            <div>
+            <div style={{ marginTop: 16 }}>
 Income levels rise with inflation, so more people will be subject to the highest income bracket than they were under the pre-Trump tax law.
             </div>
             <div>
 The deduction for married and joint filers increases from $12,700 to $24,000, but eliminates personal exemptions.
             </div>
-            <TweetEmbed id="1070110615627333632" />
         </div>
     }
     render() {
