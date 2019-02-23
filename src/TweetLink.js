@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 class TweetLink extends React.Component {
     render() {
-      return <div style={{ position: 'relative', margin: 30}}>
+      return <div className="tweetLink" style={{ position: 'relative' }}>
         <TweetEmbed id={ this.props.id } options={{ width: '100%' }} />
         <Link to={ '/tweet/' + this.props.id }>
           <div 
