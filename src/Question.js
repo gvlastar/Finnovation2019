@@ -7,51 +7,51 @@ class Question extends React.Component {
         answered: false,
         answer: null,
       }
-      this.questions = this.props.questions || [
-        'A',
-        'B',
-        'C',
-      ]
-      this.answers = this.props.answers || [
-        'Answer to A',
-        'Answer to B',
-        'Answer to C',
-      ]
+        this.questions = this.props.questions || [
+            '< 19,050',
+            '19,050 - 77,400',
+            '77,400 - 165,000',
+        ]
+        this.answers = this.props.answers || [
+            'Answer to A',
+            'Answer to B',
+            'Answer to C',
+        ]
     }
 
-  renderQuestions() {
-    return <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', }}>
-      { this.questions.map((q, i) => (
-        <div 
-          style={{ 
-            width: 64, 
-            height: 64, 
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: 'red',
-            marginTop: 24
-          }}
-          onClick={ () => this.setState({ answered: true, answer: i })}
-        >
-          { q }
+    renderQuestions() {
+        return <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', }}>
+            { this.questions.map((q, i) => (
+                <div 
+                    style={{ 
+                        width: 64, 
+                        height: 64, 
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        backgroundColor: 'red',
+                        marginTop: 24
+                    }}
+                    onClick={ () => this.setState({ answered: true, answer: i })}
+                >
+                    { q }
+                </div>
+            )) }
         </div>
-      )) }
-    </div>
-  }
+    }
 
-  renderAnswer() {
-    return <div style={{ marginTop: 24 }}>
-        { this.answers[this.state.answer] }
-      </div>
-  }
+    renderAnswer() {
+        return <div style={{ marginTop: 24 }}>
+            { this.answers[this.state.answer] }
+        </div>
+    }
 
-  render() {
-    return <div style={{ backgroundColor: 'yellow', width: '100%', padding: 24 }}>
-      <h2 style={{ margin: 0 }}>Question</h2>
-      { this.state.answered ? this.renderAnswer() : this.renderQuestions() }
-    </div>
-  }
+    render() {
+        return <div style={{ backgroundColor: 'yellow', width: '100%', padding: 24 }}>
+            <h2 style={{ margin: 0 }}>What is your family’s annual income?</h2>
+            { this.state.answered ? this.renderAnswer() : this.renderQuestions() }
+        </div>
+    }
 }
 
 export default Question  
