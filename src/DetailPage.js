@@ -44,13 +44,13 @@ The deduction for married and joint filers increases from $12,700 to $24,000, bu
     }
     render() {
         const id = this.props.match.params.id
-        return <div style={{
+        return <div id="details" style={{
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
         }}>
         <TweetEmbed id={ this.props.match.params.id } />
-        <div style={{ margin: 24, maxWidth: 700, width: '100%', display: 'flex', flexDirection: 'column'}}>
+        <div id="content" style={{ margin: 24, maxWidth: 700, width: '100%', display: 'flex', flexDirection: 'column'}}>
             { id === "944308491887316992" ?
                 this.renderTaxes() :
                 this.renderTariffs()
